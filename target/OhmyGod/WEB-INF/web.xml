@@ -1,0 +1,87 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BiServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.BiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BiServlet</servlet-name>
+    <url-pattern>/BiServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>QueryServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.QueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryServlet</servlet-name>
+    <url-pattern>/QueryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.DeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeServlet</servlet-name>
+    <url-pattern>/DeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChouServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.ChouServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChouServlet</servlet-name>
+    <url-pattern>/ChouServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PayServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.PayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PayServlet</servlet-name>
+    <url-pattern>/PayServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BackServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.BackServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BackServlet</servlet-name>
+    <url-pattern>/BackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BuyServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.BuyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyServlet</servlet-name>
+    <url-pattern>/BuyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataServlet</servlet-name>
+    <servlet-class>com.jyz.servlet.DataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataServlet</servlet-name>
+    <url-pattern>/DataServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

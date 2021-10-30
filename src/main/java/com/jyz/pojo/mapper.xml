@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="choke">
+    <insert id="insert" parameterType="com.jyz.pojo.User">
+        INSERT INTO "HERO"("username","password","email","sex","money") VALUES(#{username},#{password},#{email},#{sex},#{money})
+    </insert>
+    <insert id="insert2" parameterType="com.jyz.pojo.Teacher">
+        INSERT INTO "TEACHER"("username","password","status") VALUES(#{username},#{password},#{status})
+    </insert>
+    <insert id = "insert3" parameterType="com.jyz.pojo.Bishe">
+        INSERT INTO "BISHE" VALUES(#{id},#{subject},#{nature},#{shape},#{whethernew},#{whetheroffc},#{reason},#{source},#{teacher})
+    </insert>
+    <insert id = "insert4" parameterType="com.jyz.pojo.Gun">
+        INSERT INTO "GUN" VALUES(#{id},#{gun})
+    </insert>
+    <select id="select" resultType="com.jyz.pojo.User">
+    select "password" from "HERO" WHERE "username" = #{username}
+    </select>
+    <select id="select2" resultType="com.jyz.pojo.User">
+        select "id" from "HERO" WHERE "username" = #{username}
+    </select>
+    <select id="select3" resultType="com.jyz.pojo.Teacher">
+        select "password" from "TEACHER" WHERE "username" = #{username}
+    </select>
+    <select id="select4" resultType="com.jyz.pojo.User">
+        select * from "HERO" WHERE "username" = #{username}
+    </select>
+    <select id="select5" resultType="com.jyz.pojo.Bishe">
+        select * from "BISHE" WHERE "id" = #{id}
+    </select>
+    <select id="select6" resultType="com.jyz.pojo.Bishe">
+        select * from "BISHE" WHERE "teacher" = #{teacher}
+    </select>
+    <delete id="delete1">
+        delete from "BISHE" WHERE "id" = #{id}
+    </delete>
+    <select id="select7" resultType="com.jyz.pojo.User">
+        select "money" from "HERO" WHERE "id" = #{id}
+    </select>
+    <update id="update1">
+        update "HERO" set "money"="money"-#{jian} where "id"=#{id}
+    </update>
+    <update id="update2">
+        update "HERO" set "money"="money"+#{jian} where "id"=#{id}
+    </update>
+    <select id="select8" resultType="com.jyz.pojo.Gun">
+        select "gun" from "GUN" WHERE "id" = #{id}
+    </select>
+</mapper>
